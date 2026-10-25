@@ -1,0 +1,12 @@
+
+{
+  "manifest_version": 3,
+  "name": "SafeBrowse - Website Safety Checker",
+  "version": "1.0.0",
+  "description": "Check website URLs for common suspicious patterns and connection security indicators.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "Check website safety",
+    "default_popup": "popup.html"
+  }
+}

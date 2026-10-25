@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeBrowse</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">
+        <span class="shield">✓</span>
+        <div>
+          <h1>SafeBrowse</h1>
+          <p>Website Safety Checker</p>
+        </div>
+      </div>
+      <span class="version">v1.0</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">BROWSER SECURITY</p>
+      <h2>Check before you trust.</h2>
+      <p>Review the current website for common warning signs.</p>
+    </section>
+
+    <section class="site-card">
+      <div class="site-icon">◎</div>
+      <div class="site-info">
+        <p class="muted">CURRENT WEBSITE</p>
+        <p id="siteName" class="site-name">Checking current tab...</p>
+        <p id="siteUrl" class="site-url"></p>
+      </div>
+    </section>
+
+    <button id="checkButton">Analyze website</button>
+
+    <section id="result" class="result neutral" aria-live="polite">
+      <div id="resultIcon" class="result-icon">◉</div>
+      <div>
+        <h3 id="resultTitle">Ready to check</h3>
+        <p id="resultText">Analyze the current tab to see its safety indicators.</p>
+      </div>
+    </section>
+
+    <section class="checks">
+      <h3>Safety indicators</h3>
+      <div class="check-row">
+        <span>Connection</span>
+        <strong id="httpsStatus">Not checked</strong>
+      </div>
+      <div class="check-row">
+        <span>URL structure</span>
+        <strong id="urlStatus">Not checked</strong>
+      </div>
+      <div class="check-row">
+        <span>Hostname</span>
+        <strong id="hostStatus">Not checked</strong>
+      </div>
+    </section>
+
+    <p class="disclaimer">
+      This tool checks basic URL indicators. It cannot guarantee that a
+      website is safe or detect every phishing attack.
+    </p>
+    <footer>SAFEBROWSE · STAY ALERT ONLINE</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
