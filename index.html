@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeBrowse | Website Safety Checker</title>
+  <meta name="description" content="SafeBrowse is a Chrome extension that checks websites for suspicious URL patterns and connection security indicators.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080d18;
+      color: #edf4ff;
+      line-height: 1.6;
+    }
+    header {
+      padding: 24px 8%;
+      border-bottom: 1px solid #26334a;
+      color: #72f3d2;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: 70px auto;
+      padding: 24px;
+    }
+    .tag {
+      color: #72f3d2;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 1.1;
+      margin: 18px 0;
+    }
+    h1 span { color: #72f3d2; }
+    .intro {
+      color: #b5c3d9;
+      font-size: 18px;
+      max-width: 680px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: #72f3d2;
+      color: #08111b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 55px;
+    }
+    .card {
+      background: #111c2e;
+      border: 1px solid #293950;
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .card h2 { color: #72f3d2; font-size: 19px; }
+    .card p, footer { color: #b5c3d9; }
+    .notice {
+      margin-top: 28px;
+      padding: 16px;
+      border-left: 3px solid #72f3d2;
+      background: #111c2e;
+      color: #c7d4e7;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #26334a;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>◉ SafeBrowse</header>
+  <main>
+    <div class="tag">BROWSER SECURITY PROJECT</div>
+    <h1>Think before you <span>click.</span></h1>
+    <p class="intro">
+      SafeBrowse is a Chrome extension that checks website URLs
+      for common suspicious patterns and highlights connection
+      security indicators before you trust a website.
+    </p>
+
+    <a class="button"
+       href="https://github.com/yadagiriagala9347-a11y/SafeBrowse">
+       View Source Code on GitHub
+    </a>
+
+    <section class="cards">
+      <article class="card">
+        <h2>URL Pattern Analysis</h2>
+        <p>Checks for suspicious URL characteristics such as
+        misleading brand-like names and unusual hostname patterns.</p>
+      </article>
+      <article class="card">
+        <h2>HTTPS Indicator</h2>
+        <p>Identifies whether a website uses HTTPS. HTTPS alone
+        does not guarantee that a website is trustworthy.</p>
+      </article>
+      <article class="card">
+        <h2>Simple Safety Results</h2>
+        <p>Displays easy-to-understand warnings to help users
+        review a website before sharing sensitive information.</p>
+      </article>
+    </section>
+
+    <div class="notice">
+      <strong>Important:</strong> SafeBrowse uses basic URL heuristics.
+      It does not guarantee that a website is safe and does not
+      currently provide confirmed phishing or malware database checks.
+    </div>
+  </main>
+
+  <footer>SafeBrowse · Educational Cybersecurity Project</footer>
+</body>
+</html>
